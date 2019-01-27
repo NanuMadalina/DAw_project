@@ -24,7 +24,7 @@ namespace WebApplication1.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Adresa Sediu Central: Bucuresti, Soseaua Chitilei Nr. 228 C, etaj 1, Municipiul Bucuresti, Sector 1";
+            ViewData["Message"] = "";
 
             return View();
         }
