@@ -13,5 +13,6 @@ namespace WebApplication1.Models
        
         public string PhoneNumber { get; set; }
         public string PatientAddress { get; set; }
+       
     }
 }
