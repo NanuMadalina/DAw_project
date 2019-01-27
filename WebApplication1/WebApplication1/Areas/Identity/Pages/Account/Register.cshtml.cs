@@ -92,8 +92,10 @@ namespace WebApplication1.Areas.Identity.Pages.Account
                 var user = new Patients {
                     UserName = Input.Email,
                     Fullname = Input.Fullname, PersonalCode = Input.PersonalCode, Email = Input.Email,
-                    PhoneNumber = Input.PhoneNumber, PatientAddress  = Input.PatientAddress};
+                    PhoneNumber = Input.PhoneNumber, PatientAddress  = Input.PatientAddress };
                 var result = await _userManager.CreateAsync(user, Input.Password);
+                await _userManager.AddToRoleAsync(user, "User");
+
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");

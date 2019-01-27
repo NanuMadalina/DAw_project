@@ -83,7 +83,7 @@ namespace WebApplication1
             //initializing custom roles   
             var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var UserManager = serviceProvider.GetRequiredService<UserManager<Patients>>();
-            string[] roleNames = { "Admin" };
+            string[] roleNames = { "Admin", "User" };
             IdentityResult roleResult;
 
             foreach (var roleName in roleNames)
