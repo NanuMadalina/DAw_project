@@ -144,3 +144,8 @@ C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\
 C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorTargetAssemblyInfo.cs
 C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.Views.pdb
 C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CopyComplete
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Create.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Delete.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Details.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Edit.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Index.g.cshtml.cs

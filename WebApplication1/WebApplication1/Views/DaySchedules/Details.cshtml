@@ -1,0 +1,36 @@
+﻿@model WebApplication1.Models.DaySchedule
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DaySchedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDayNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdDayNavigation.IdDay)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDoctorNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdDoctorNavigation.IdDoctor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdHourNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdHourNavigation.IdHour)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdSchedule">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
