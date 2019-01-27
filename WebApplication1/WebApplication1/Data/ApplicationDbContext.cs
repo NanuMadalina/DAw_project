@@ -22,7 +22,7 @@ namespace WebApplication1.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-9V1PTJ9;Database=DAW;Integrated Security = SSPI;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-VNCSDUQ;Database=Daw;Integrated Security = SSPI;Trusted_Connection=True;");
             }
         }
         public DbSet<WebApplication1.Models.Doctors> Doctors { get; set; }

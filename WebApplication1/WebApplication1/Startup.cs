@@ -48,7 +48,7 @@ namespace WebApplication1
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -73,6 +73,42 @@ namespace WebApplication1
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+           // DbInitializer.Seed(ApplicationDbContext, app);
+            CreateRoles(serviceProvider).Wait();
+        }
+
+        private async Task CreateRoles(IServiceProvider serviceProvider)
+        {
+            //initializing custom roles   
+            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var UserManager = serviceProvider.GetRequiredService<UserManager<Patients>>();
+            string[] roleNames = { "Admin" };
+            IdentityResult roleResult;
+
+            foreach (var roleName in roleNames)
+            {
+                var roleExist = await RoleManager.RoleExistsAsync(roleName);
+                if (!roleExist)
+                {
+                    //create the roles and seed them to the database: Question 1  
+                    roleResult = await RoleManager.CreateAsync(new IdentityRole(roleName));
+                }
+            }
+
+            Patients user = await UserManager.FindByNameAsync("admin@gmail.com");
+
+            if (user == null)
+            {
+                user = new Patients()
+                {
+                    UserName = "admin@yahoo.com",
+                    Email = "admin@yahoo.com",
+                };
+                await UserManager.CreateAsync(user, "Masina131!");
+            }
+            await UserManager.AddToRoleAsync(user, "Admin");
+
         }
     }
 }
