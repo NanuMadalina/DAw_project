@@ -1,7 +1,26 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "Your health is our highest priority";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="col">
+    <div class="col-md-5">
+        <img src="~/images/about.jpg" class="about" />
+    </div>
+
+    <div class="col-md-4 description">Clinica SkyHealth, aduce pe piata romaneasca conceptul de ingrijire medicala 'aproape de tine'. SkyHealth vine in intampinarea tuturor celor preocupati sa aiba o viata sanatoasa si ii apartine fiecarui pacient si familiei sale. La SkyHealth recunoastem valoarea pe care o aduce individualitatea, diversitatea si grija fata de sanatatea celor apropiati</div>
+
+</div>
+
+
+<style>
+    .about {
+        width: 250%;
+    }
+
+    .description {
+        margin-left: 15%;
+        margin-top: 7%;
+        color: white;
+    }
+</style>

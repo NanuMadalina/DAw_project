@@ -26,5 +26,6 @@ namespace WebApplication1.Data
             }
         }
         public DbSet<WebApplication1.Models.Doctors> Doctors { get; set; }
+        public DbSet<WebApplication1.Models.DaySchedule> DaySchedule { get; set; }
     }
 }
