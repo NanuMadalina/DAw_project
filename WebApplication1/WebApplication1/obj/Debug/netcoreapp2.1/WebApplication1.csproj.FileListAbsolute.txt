@@ -159,3 +159,18 @@ C:\Users\Ioana\Documents\DAw_project\WebApplication1\WebApplication1\obj\Debug\n
 C:\Users\Ioana\Documents\DAw_project\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Details.g.cshtml.cs
 C:\Users\Ioana\Documents\DAw_project\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Edit.g.cshtml.cs
 C:\Users\Ioana\Documents\DAw_project\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Index.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Create.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Delete.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Details.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Edit.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\DaySchedules\Index.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Create.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Delete.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Details.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\MedicalInvestigations\Create.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\MedicalInvestigations\Delete.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\MedicalInvestigations\Details.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\MedicalInvestigations\Edit.g.cshtml.cs
+C:\Users\Valentina\Desktop\New folder\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\MedicalInvestigations\Index.g.cshtml.cs
