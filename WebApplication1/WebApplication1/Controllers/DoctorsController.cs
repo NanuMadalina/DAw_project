@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -18,14 +19,14 @@ namespace WebApplication1.Controllers
         {
             _context = context;
         }
-
+        [Authorize(Roles ="Admin")]
         // GET: Doctors
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Doctors.Include(d => d.IdDepartmentNavigation);
             return View(await applicationDbContext.ToListAsync());
         }
-
+     
         // GET: Doctors/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -45,6 +46,7 @@ namespace WebApplication1.Controllers
             return View(doctors);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Doctors/Create
         public IActionResult Create()
         {
@@ -69,6 +71,7 @@ namespace WebApplication1.Controllers
             return View(doctors);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Doctors/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -122,6 +125,7 @@ namespace WebApplication1.Controllers
             return View(doctors);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Doctors/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -141,6 +145,7 @@ namespace WebApplication1.Controllers
             return View(doctors);
         }
 
+    
         // POST: Doctors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
